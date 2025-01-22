@@ -1,0 +1,236 @@
+    1  igit init
+    2  cd /root/Desktop/host
+    3  git init
+    4  #!/bin/bash
+    5  alias file_remove='function _file_remove() { 
+    6    if [ -z "$1" ]; then
+    7      echo "No directory name provided."
+    8      return 1
+    9    fi
+   10    dir_path=$(find . -type d -name "$1" 2>/dev/null | head -n 1)
+   11    if [ -z "$dir_path" ]; then
+   12      echo "Error: No directory named $1 found in the current path."
+   13      return 1
+   14    fi
+   15    rm -rf "$dir_path"/*
+   16    echo "All files removed from $dir_path."
+   17  }; _file_remove'
+   18  file_remove test_1
+   19  #!/bin/bash
+   20  cd "P2/Problem1/electron_scattering_data/" || { echo "directory not found"; exit 1; }
+   21  mkdir electron scattering data/odd/
+   22  mkdir electron_scattering_data/odd
+   23  mkdir "electron_scattering_data/odd"
+   24  cd /root/Desktop/host
+   25  #!/bin/bash
+   26  cd /root/Desktop/host/PS1/P2/Problem1/electron_scattering_data || { echo "Directory not found!"; exit 1; }
+   27  #!/bin/bash
+   28  cd /root/Desktop/host/PS1/P2/Problem1/electron_scattering_data || { echo "Directory not found!"; exit 1; }
+   29  #!/bin/bash
+   30  cd /root/Desktop/host/PS1/P2/Problem1/electron_scattering_data || { echo "Directory not found!"; exit 1; }
+   31  cd /root/Desktop/host
+   32  git init
+   33  #! /bin/bash
+   34  cd /root/Desktop/host/PS1/P2/Problem1/electron_scattering_data || { echo "Directory not found!"; exit 1; }
+   35  #!/bin/bash
+   36  cd /root/Desktop/host/P2/Problem1/electron_scattering_data || { echo "Directory not found!"; exit 1; }
+   37  /bin/bash
+   38  mkdir -p odd even
+   39  for file in *; do   index=$(echo "$file" | grep -oE 'index_[0-9]+' | grep -oE '[0-9]+')  ;   if [ -z "$index" ]; then     continue;   fi;   if (( index % 2 == 0 )); then     mv "$file" even/;   else     mv "$file" odd/;   fi; done
+   40  git init
+   41  cd /root/Desktop/host/
+   42  /bin/bash
+   43  cd /root/Desktop/host/P2/Problem1/electron_scattering_data || { echo "Directory not found!"; exit 1; }
+   44  mkdir -p odd even
+   45  for file in *; do   index=$(echo "$file" | grep -oE 'index_[0-9]+' | grep -oE '[0-9]+')  ;   if [ -z "$index" ]; then     continue;   fi;   if (( index % 2 == 0 )); then     mv "$file" even/;   else     mv "$file" odd/;   fi
+   46  #!/bin/bash
+   47  echo 1
+   48  done
+   49  cd /root/Desktop/host/
+   50  cd /root/Desktop/host/P2/Problem1/electron_scattering_data || { echo "Directory not found!"; exit 1; }
+   51  mkdir -p odd even
+   52  for file in *; do   index=$(echo "$file" | grep -oE 'index_[0-9]+' | grep -oE '[0-9]+')  ;   if [ -z "$index" ]; then     continue;   fi;   if (( index % 2 == 0 )); then     mv "$file" even/;   else     mv "$file" odd/;   fi; done
+   53  history >> history.txt
+   54  cd /root/Desktop/host/
+   55  git add .
+   56  git checkout -b main
+   57  git add .
+   58  git commit -m "JessonQiHW1Q2"
+   59  git config --global junhangqi
+   60  git config --global user.name junhangqi
+   61  git config --global user.email junhangqi@ucsb.edu
+   62  git add .
+   63  git commit -m "JessonQiHW1Q2"
+   64  git remote add origin https://github.com/Jesson-qi/P2.git
+   65  git push -u origin main
+   66  git push -u origin P2
+   67  git push https://github.com/Jesson-qi/P2.git main
+   68  cd P2/
+   69  git push https://github.com/Jesson-qi/P2.git main
+   70  git remote add origin https://github.com/Jesson-qi/P2.git
+   71  git remote -v
+   72  git push -u  origin main
+   73  git push  origin main
+   74  git status
+   75  git add .
+   76  git commit -m "JunhangQiHW1Q2"
+   77  git push -u origin main
+   78  git init
+   79  cd /root/Desktop/host/
+   80  #! /bin/bash
+   81  decimal_hex_bin(){  local decimal=$1;  local hex="";  local hex_table=("0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F");  local bin="";  while [ "$decimal" -gt 0]; do   remainder=$(($decimal %16));   hex="${hex_table[%remiander]}$hex";   decimal=$((decimal / 16));  done;  echo "$hex"; }
+   82  decimal_hex_bin(16)
+   83  decimal_hex_bin "16"
+   84  #! /bin/bash
+   85  decimal_to_hexadecimal() {     local decimal=$1;     local hex="";     local hex_table=("0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "A" "B" "C" "D" "E" "F")     while [ "$decimal" -gt 0 ]; do         remainder=$((decimal % 16));         hex="${hex_table[$remainder]}$hex";         decimal=$((decimal / 16));     done     echo "$hex"; }
+   86  # Test the function
+   87  read -p "Enter a decimal number: " decimal_number
+   88  echo "Hexadecimal: $hex_result"
+   89  Enter a decimal number: 255
+   90  decimal_to_hexadecimal(225)
+   91  decimal_to_hexadecimal "225"
+   92  git init
+   93  cd /root/Desktop/host/
+   94  #!/bin/bash
+   95  decimal_to_hexadecimal() {     local decimal=$1;     local hex="";     local hex_table=("0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "A" "B" "C" "D" "E" "F");     local binary="";     while [ "$decimal" -gt 0 ]; do         remainder=$((decimal % 16));         hex="${hex_table[$remainder]}$hex";         decimal=$((decimal / 16));     done     echo "$hex";     while [ "$decimal" -gt 0 ]; do         binary=$((decimal % 2))$binary;         decimal=$((decimal / 2));     done     echo "$binary"; }
+   96  #!/bin/bash
+   97  git init
+   98  cd /root/Desktop/hos
+   99  cd /root/Desktop/host
+  100  #!/bin/bash
+  101  decimal_to_hexadecimal() {     local decimal=$1;     local hex="";     local hex_table=("0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "A" "B" "C" "D" "E" "F");     local binary="";     local decimal_2=$1;     while [ "$decimal" -gt 0 ]; do         remainder=$((decimal % 16));         hex="${hex_table[$remainder]}$hex";         decimal=$((decimal / 16));     done     echo "$hex";     while [ "$decimal_2" -gt 0 ]; do         binary=$((decimal_2 % 2))$binary;         decimal_2=$((decimal_2 / 2));     done     echo "$binary"; }
+  102  decimal_to_hexadecimal "225"
+  103  mkdir Problem_3
+  104  cd Problem_3
+  105  history >> convertion_result.txt
+  106  git checkout -b main
+  107  git add .
+  108  git commit -m "Problem_3"
+  109  git remote add origin https://github.com/Jesson-qi/-Problem_3.git
+  110  git push -u origin main
+  111  git remote -v
+  112  git push new-remote Problem_3
+  113  git remote remove origin
+  114  git remote -v
+  115  git remote add origin https://github.com/Jesson-qi/Problem_3.git
+  116  git push -u origin main
+  117  cd /root/Desktop/host/
+  118  git init
+  119  git checkout -b feature_branch
+  120  echo "hellow world" >> readme.txt
+  121  git add readme.txt
+  122  cd /root/Desktop/host
+  123  git checkout -b feature_branch
+  124  echo "Hello, World!" > README.txt
+  125  git add README.txt
+  126  git push origin feature_branch
+  127  git remote -v
+  128  cd /root/Desktop/host/
+  129  git checkout -b feature
+  130  git checkout -b feature_branch
+  131  echo "Hello, World!" > README.md
+  132  cd /root/Desktop/host
+  133  git checkout -b feature_branch
+  134  echo "Hello, World!" > README.md
+  135  git add README.md
+  136  ]git commit -m "Add README with 'Hello, World'"
+  137  git commit -m "Add README with 'Hello, World'"
+  138  git push origin feature_branch
+  139  git merge feature_branch
+  140  git merge main
+  141   git push origin feature_branch
+  142  git status
+  143  echo "Hello World!" > README.md
+  144  git checkout feature_branch
+  145  git checkout feature_branch
+  146  echo "Hello World!" > README.md
+  147  git add README.md
+  148  git push origin feature_branch
+  149  git status
+  150  git push origin feature_branch
+  151  cd /root/Desktop/host
+  152  git add remote origin https://github.com/Jesson-qi/worksheet_1.git
+  153  git remote origin https://github.com/Jesson-qi/worksheet_1.git
+  154  git remote add origin https://github.com/Jesson-qi/worksheet_1.git
+  155  git remote -v
+  156  git remote remove
+  157  git remote remove https://github.com/Jesson-qi/Problem_3.git
+  158  git remote remove Problem_3
+  159  git remote remove origin
+  160  git remote add origin https://github.com/Jesson-qi/worksheet_1.git
+  161  git remote -v
+  162  git checkout -b main
+  163  makdir worksheet_1
+  164  mkdir worksheet_1
+  165  cd nworksheet_1
+  166  cd worksheet_1
+  167  echo "(this is a message from local main branch)" >> src_info.txt
+  168  ls
+  169  cat src_info.txt
+  170  git add src_info.txt
+  171  git commit -m "Add a message from the local main branch"
+  172  echo "# worksheet_1" >> README.md
+  173  git init
+  174  git add README.md
+  175  git commit -m "first commit"
+  176  git branch -M main
+  177  git remote add origin https://github.com/Jesson-qi/worksheet_1.git
+  178  git push -u origin main
+  179  add src_info.txt
+  180  git add src_info.txt
+  181  git commit -m "Add a message from the local main branch"
+  182  git push -u origin main
+  183  git status
+  184  git log
+  185  git reset HEAD-1
+  186  git checkout -b feature_branch
+  187  echo "(thi is a message from local feature branch)" >> src_info.txt
+  188  echo "(this is a message from local feature branch to test_info)" >> ../test/test_info.txt
+  189  git status
+  190  git add src_info.txt
+  191  ls
+  192  gi status
+  193  git status
+  194  echo "(this is a message from local feature branch to test_info)" >> "../test/test_info.txt"
+  195  echo "(this is a message from local feature branch to test_info)" >> ..testtest_info.txt
+  196  git add ..testtest_info.txt
+  197  git status
+  198  git commit -m "new branch with two changes"
+  199  git push -u origin feature_branch
+  200  git log
+  201  git chekout main
+  202  git checkout main
+  203  git merge feature_branch
+  204  git status
+  205  git log
+  206  git push origin main
+  207  git fetch origin
+  208  git status
+  209  git diff main origin /main
+  210  git diff main origin/main
+  211  git reset --hard HEAD~1
+  212  cat src_info.txt
+  213  git pull origin main
+  214  cd ..
+  215  ls
+  216  cd `/Desktop/
+`
+  217  cd ~/Desktop/
+  218  cd /root/Desktop
+  219  mkdir git_clone
+  220  cd git_clone
+  221  git clone https://github.com/Physics-129AL/git_example.git
+  222  ls
+  223  cd Physics129_git_example
+  224  cd git_example
+  225  ls
+  226  git status
+  227  git log
+  228  history >> history.txt
+  229  git push origin main
+  230  git remote add origin https://github.com/Jesson-qi/worksheet_1.git
+  231  git push origin main
+  232  git push -u https://github.com/Jesson-qi/worksheet_1.git
+  233  cd /root/Desktop/host
+  234  cd worksheet_1
+  235  history >> history.txt
